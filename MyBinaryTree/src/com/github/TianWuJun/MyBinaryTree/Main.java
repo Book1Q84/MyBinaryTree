@@ -1,5 +1,8 @@
 package com.github.TianWuJun.MyBinaryTree;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  * Project:二叉树基本操作的实现
  * 
@@ -11,8 +14,19 @@ public class Main {
 	public static void main(String[] args) {
 		BinaryTreeNode btn =new BinaryTreeNode();
 		StringBuilder sb=new StringBuilder();
-		long[] dataList= {0,1,2,3,4,5,6,7};
 		
+		ArrayList<Long> ls=new ArrayList<>();
+		Scanner sc=new Scanner(System.in);
+		while(sc.hasNextLong()) {					//输入数据
+			ls.add(sc.nextLong());
+		}
+		sc.close();
+		long[] dataList=new long[ls.size()];
+		for(int i=0;i<ls.size();i++) {
+			dataList[i]=ls.get(i);
+		}
+				
+				
 		/*显示原始数据*/
 		System.out.println("原始数据为：");
 		sb.append('{');
