@@ -4,7 +4,13 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-/*线索二叉树的实现*/
+/**
+ * 
+ * 
+ * 线索二叉树的实现
+ * 
+ */
+
 public class ThreadBinaryTreeNode {
 	private long data; // 数据域
 	ThreadBinaryTreeNode lChild, rChild, root; // 左右指针域

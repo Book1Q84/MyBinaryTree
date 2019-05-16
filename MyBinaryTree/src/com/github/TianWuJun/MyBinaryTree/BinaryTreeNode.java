@@ -4,7 +4,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-/*基本二叉树的实现*/
+/**
+ * 
+ * 
+ * 
+ * 基本二叉树的实现
+ */
 
 public class BinaryTreeNode {
 	/* 定义数据类型，左右孩子，根节点，和以队列形式存储所有节点 */
@@ -51,6 +56,7 @@ public class BinaryTreeNode {
 			}
 		}
 	}
+
 	
 	/* 层序遍历 */
 	public void levelOrder(BinaryTreeNode root) {
